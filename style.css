@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+}
+.top{
+    color: white;
+}
+.side-btn{
+    color: white;
+}
+.user{
+    width: 60px;
+    height: 50px;
+}
+.start{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
