@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.bg{
-    position: absolute;
-    z-index: -1;
-}
+
 .top{
     color: white;
 }
@@ -18,7 +15,10 @@
     height: 50px;
 }
 .start{
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: flex-end; */
+   
+    width: 100%;
+
 }
