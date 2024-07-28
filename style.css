@@ -32,3 +32,31 @@
     border-bottom-right-radius: 120%;
     background: var(--theme);
 }
+
+#userInput{
+    /* background-color: rgb(146, 202, 251); */
+    /* border-radius: 30px; */
+    border: none;
+    width: 100%;
+    /* border-top: 1px solid #525151; */
+}
+.my-btn{
+    width: 50px !important;
+    height: 8vh;
+    background: var(--theme);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    /* text-align: right !important; */
+}
+.last-row{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    /* border-top: 1px solid #525151; */
+    height: 80vh;
+}
+hr.line{
+    /* color: red; */
+    width: 100%;
+}
