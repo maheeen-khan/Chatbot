@@ -1,3 +1,8 @@
+:root {
+    --theme: linear-gradient(15deg, rgb(7, 7, 199), rgb(89, 206, 245));
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -25,5 +30,5 @@
 .container-fluid{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 120%;
-    background: linear-gradient(15deg, rgb(7, 7, 199), rgb(89, 206, 245));
+    background: var(--theme);
 }
