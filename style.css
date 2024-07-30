@@ -37,6 +37,7 @@ body{
     border-bottom-right-radius: 120%;
     background: var(--theme);
     position:fixed;
+    z-index: 2;
 }
 
 #userInput{
@@ -73,6 +74,7 @@ body{
 }
 .extra{
     position: fixed;
+    bottom: 0;
     background-color: white;
 }
 hr#line{
@@ -100,10 +102,10 @@ cursor: pointer;
         width: 100%;
     }
     .bottom-sec1{
-        /* width: 80% !important; */
+        width: 80% !important;
     }
     .bottom-sec{
-        /* width: 20% !important; */
+        width: 20% !important;
     }
     
 }
