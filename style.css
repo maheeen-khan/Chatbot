@@ -12,6 +12,7 @@
 }
 body{
     background-color: white;
+    height: 100vh;
 }
 .top{
     color: white;
@@ -35,6 +36,7 @@ body{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 120%;
     background: var(--theme);
+    position:sticky;
 }
 
 #userInput{
@@ -63,10 +65,18 @@ body{
     justify-content: space-around;
     align-items:flex-end;
     /* border-top: 1px solid #525151; */
-    height: 75vh;
+    height: 78vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
 }
-hr.line{
-    /* color: red; */
+.extra{
+    position: fixed;
+    background-color: white;
+}
+hr#line{
+    color: rgb(0, 0, 0);
     width: 100%;
 }
 
@@ -79,6 +89,8 @@ hr.line{
 #dark_mode:hover{
 cursor: pointer;
 }
+
+
 @media screen and (max-width:767px){
     .my-btn{
         width:40px;
@@ -88,10 +100,10 @@ cursor: pointer;
         width: 100%;
     }
     .bottom-sec1{
-        width: 80% !important;
+        /* width: 80% !important; */
     }
     .bottom-sec{
-        width: 20% !important;
+        /* width: 20% !important; */
     }
     
 }
