@@ -36,7 +36,7 @@ body{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 120%;
     background: var(--theme);
-    position:sticky;
+    position:fixed;
 }
 
 #userInput{
