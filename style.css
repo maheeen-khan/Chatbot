@@ -1,46 +1,55 @@
 :root {
     --theme: linear-gradient(15deg, rgb(7, 7, 199), rgb(89, 206, 245));
-    
+
 }
-:root{
+
+:root {
     --dark-theme: linear-gradient(15deg, rgb(6, 6, 138), rgb(49, 180, 224));
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: white;
     height: 100vh;
+    overflow-x: hidden;
 }
-.top{
+
+.top {
     color: white;
 }
-.side-btn{
+
+.side-btn {
     color: white;
 }
-.user{
+
+.user {
     width: 60px;
     height: 50px;
 }
-.start{
+
+.start {
     /* display: flex;
     justify-content: space-evenly;
     align-items: flex-end; */
-   
+
     /* width: 100%; */
 
 }
-.container-fluid{
+
+.container-fluid {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 120%;
     background: var(--theme);
-    position:fixed;
+    position: fixed;
     z-index: 2;
 }
 
-#userInput{
+#userInput {
     /* background-color: rgb(146, 202, 251); */
     /* border-radius: 30px; */
     border: none;
@@ -49,8 +58,8 @@ body{
     background: transparent;
 }
 
-.my-btn{
-    width:50px;
+.my-btn {
+    width: 50px;
     height: 50px;
     background: var(--theme);
     color: white;
@@ -61,51 +70,57 @@ body{
     justify-content: center;
     align-items: center;
 }
-.last-row{
+
+.last-row {
     display: flex;
     justify-content: space-around;
-    align-items:flex-end;
+    align-items: flex-end;
     /* border-top: 1px solid #525151; */
     height: 78vh;
     width: 100%;
     position: absolute;
     bottom: 0;
-
+    overflow-x: hidden !important;
 }
-.extra{
+
+.extra {
     position: fixed;
     bottom: 0;
     background-color: white;
 }
-hr#line{
+
+hr#line {
     color: rgb(0, 0, 0);
     width: 100%;
 }
 
-.my-btn:hover{
-    background: linear-gradient(45deg, rgb(100, 100, 100),white);
+.my-btn:hover {
+    background: linear-gradient(45deg, rgb(100, 100, 100), white);
     cursor: pointer;
     color: rgb(10, 127, 205);
 }
 
-#dark_mode:hover{
-cursor: pointer;
+#dark_mode:hover {
+    cursor: pointer;
 }
 
 
-@media screen and (max-width:767px){
-    .my-btn{
-        width:40px;
+@media screen and (max-width:767px) {
+    .my-btn {
+        width: 40px;
         height: 40px;
     }
-    #userInput{
+
+    #userInput {
         width: 100%;
     }
-    .bottom-sec1{
+
+    .bottom-sec1 {
         width: 80% !important;
     }
-    .bottom-sec{
+
+    .bottom-sec {
         width: 20% !important;
     }
-    
+
 }
