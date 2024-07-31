@@ -53,7 +53,7 @@ function enter(event){
             chatMsg.style.marginBottom = '5px';
             chatMsg.innerHTML =  `hello how are you`;
 
-        document.getElementById("chatbot-msg").appendChild(chatMsg);
+        document.getElementById("my-msg").appendChild(chatMsg);
 
 
         },2000);
