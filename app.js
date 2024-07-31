@@ -39,7 +39,7 @@ function enter(event){
 
     }
 
-    if(['hi','hello','hey'].indexOf(userInput.value) !== -1){
+    if(['hi','hello','hey'].indexOf((userInput.value).toLowerCase()) !== -1){
 
         setTimeout(function(){
 
@@ -61,7 +61,7 @@ function enter(event){
       
     }
     
-    if((userInput.value).includes('fine') || (userInput.value).includes('good')){
+    if(((userInput.value).toLowerCase()).includes('fine') || ((userInput.value).toLowerCase()).includes('good')){
 
         setTimeout(function(){
 
@@ -81,7 +81,7 @@ function enter(event){
         },2000);
     }
 
-    if((userInput.value).includes('how') && (userInput.value).includes('you')){
+    if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('you')){
 
         setTimeout(function(){
 
