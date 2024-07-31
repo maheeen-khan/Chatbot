@@ -28,8 +28,9 @@ function enter(event){
     }
 
     if(['hi','hello','hey'].indexOf(userInput.value) !== -1){
-        // myMsg.innerHTML += `hello how are you`
-        chatMsg.innerHTML = `hello how are you`;
+
+        userInput.value = "";
+        chatMsg.innerHTML += `hello how are you`;
         console.log('hello');
     }
 }

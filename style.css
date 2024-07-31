@@ -80,7 +80,7 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
-    overflow-x: hidden !important;
+    margin-bottom: 5%;
 }
 
 .extra {
