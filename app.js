@@ -21,16 +21,34 @@ function changeMode(event) {
 }
 
 function enter(event){
-    var myMsg = document.getElementById('my-msg');
+    // var myMsg = document.getElementById('my-msg');
     var chatMsg = document.getElementById('chatbot-msg');
     if(event.keyCode === 13){
+        var myMsg = document.createElement('div');
+        myMsg.style.width = "100px";
+        myMsg.style.height = "100px";
+        myMsg.style.background = "red";
+        myMsg.style.color = "white";
+        myMsg.style.borderRadius = '5px';
+        myMsg.style.marginBottom = '5px';
         myMsg.innerHTML = `${userInput.value}`;
+
+        document.getElementById("my-msg").appendChild(myMsg);
     }
 
     if(['hi','hello','hey'].indexOf(userInput.value) !== -1){
 
-        userInput.value = "";
-        chatMsg.innerHTML += `hello how are you`;
-        console.log('hello');
+        setTimeout(function(){
+
+            userInput.value = "";
+            chatMsg.innerHTML = `hello how are you`;
+
+        },2000);
+      
     }
+
+    // else{
+    //     userInput.value = "";
+    //     chatMsg.innerHTML = `Sorry I have not understand! Please elaborate further.`;
+    // }
 }
