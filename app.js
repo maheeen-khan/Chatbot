@@ -26,6 +26,7 @@ function enter(event){
     if(event.keyCode === 13){
 
         var myMsg = document.createElement('div');
+        myMsg.className = 'ms-auto';
         myMsg.style.width = "100px";
         myMsg.style.height = "100px";
         myMsg.style.background = "red";
