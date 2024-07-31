@@ -22,8 +22,9 @@ function changeMode(event) {
 
 function enter(event){
     // var myMsg = document.getElementById('my-msg');
-    var chatMsg = document.getElementById('chatbot-msg');
+    // var chatMsg = document.getElementById('chatbot-msg');
     if(event.keyCode === 13){
+
         var myMsg = document.createElement('div');
         myMsg.style.width = "100px";
         myMsg.style.height = "100px";
@@ -34,6 +35,7 @@ function enter(event){
         myMsg.innerHTML = `${userInput.value}`;
 
         document.getElementById("my-msg").appendChild(myMsg);
+
     }
 
     if(['hi','hello','hey'].indexOf(userInput.value) !== -1){
@@ -41,7 +43,18 @@ function enter(event){
         setTimeout(function(){
 
             userInput.value = "";
-            chatMsg.innerHTML = `hello how are you`;
+            // chatMsg.innerHTML = `hello how are you`;
+            var chatMsg = document.createElement('div');
+            chatMsg.style.width = "100px";
+            chatMsg.style.height = "100px";
+            chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '5px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.innerHTML =  `hello how are you`;
+
+        document.getElementById("chatbot-msg").appendChild(chatMsg);
+
 
         },2000);
       
