@@ -30,6 +30,7 @@ function enter(event){
         myMsg.className = 'ms-auto';
         myMsg.style.width = "50%";
         myMsg.style.height = "100px";
+        myMsg.style.maxHeight = "160px";
         // myMsg.style.background = "red";
         myMsg.style.color = "white";
         myMsg.style.borderRadius = '9px';
@@ -73,7 +74,7 @@ function enter(event){
             var chatMsg = document.createElement('div');
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
-            chatMsg.style.height = "100px";
+            chatMsg.style.maxHeight = "160px";
             // chatMsg.style.background = "blue";
             chatMsg.style.color = "white";
             chatMsg.style.borderRadius = '9px';
