@@ -89,6 +89,29 @@ function enter(event){
         },2000);
     }
 
+    if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('smit')){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "100px";
+            chatMsg.style.maxHeight = "160px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `SMIT is one of the best Technology institute in Pakistan which serves IT training to thousands of students`;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
     if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('you')){
 
         setTimeout(function(){
@@ -110,6 +133,7 @@ function enter(event){
 
         },2000);
     }
+
     // else{
     //     userInput.value = "";
     //     chatMsg.innerHTML = `Sorry I have not understand! Please elaborate further.`;
