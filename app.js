@@ -2,11 +2,11 @@ function changeMode(event) {
 
     if (document.body.style.backgroundColor === 'white') {
 
-        document.body.style.backgroundColor = '#222222';
+        document.body.style.backgroundColor = '	#353839';
         document.getElementById('container-fluid').style.background = 'var(--dark-theme)';
         document.getElementById('dark_mode').innerText = `light_mode`;
         document.getElementById('line').style.color = 'white';
-        document.getElementById('extra').style.backgroundColor = 'black';
+        document.getElementById('extra').style.backgroundColor = '#353839';
     }
     else {
 
