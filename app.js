@@ -7,6 +7,7 @@ function changeMode(event) {
         document.getElementById('dark_mode').innerText = `light_mode`;
         document.getElementById('line').style.color = 'white';
         document.getElementById('extra').style.backgroundColor = '#353839';
+        document.getElementById('userInput').style.color = 'white';
     }
     else {
 
