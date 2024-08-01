@@ -1,10 +1,7 @@
 :root {
     --theme: linear-gradient(15deg, rgb(7, 7, 199), rgb(89, 206, 245));
-
-}
-
-:root {
     --dark-theme: linear-gradient(15deg, rgb(6, 6, 138), rgb(49, 180, 224));
+    --chatbot-msg : linear-gradient(15deg, rgb(108, 108, 108),rgb(195, 195, 195));
 }
 
 * {

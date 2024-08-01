@@ -26,10 +26,11 @@ function enter(event){
     if(event.keyCode === 13 || event.type === 'click'){
 
         var myMsg = document.createElement('div');
+        myMsg.style.background = 'var(--theme)';
         myMsg.className = 'ms-auto';
         myMsg.style.width = "50%";
         myMsg.style.height = "100px";
-        myMsg.style.background = "red";
+        // myMsg.style.background = "red";
         myMsg.style.color = "white";
         myMsg.style.borderRadius = '5px';
         myMsg.style.marginBottom = '5px';
@@ -46,9 +47,10 @@ function enter(event){
             userInput.value = "";
             // chatMsg.innerHTML = `hello how are you`;
             var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
-            chatMsg.style.background = "blue";
+            // chatMsg.style.background = "blue";
             chatMsg.style.color = "white";
             chatMsg.style.borderRadius = '5px';
             chatMsg.style.marginBottom = '5px';
@@ -67,9 +69,10 @@ function enter(event){
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
-            chatMsg.style.background = "blue";
+            // chatMsg.style.background = "blue";
             chatMsg.style.color = "white";
             chatMsg.style.borderRadius = '5px';
             chatMsg.style.marginBottom = '5px';
@@ -87,9 +90,10 @@ function enter(event){
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
-            chatMsg.style.background = "blue";
+            // chatMsg.style.background = "blue";
             chatMsg.style.color = "white";
             chatMsg.style.borderRadius = '5px';
             chatMsg.style.marginBottom = '5px';
