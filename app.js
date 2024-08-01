@@ -89,7 +89,7 @@ function enter(event){
         },2000);
     }
 
-    
+
     if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('you')){
 
         setTimeout(function(){
@@ -113,7 +113,79 @@ function enter(event){
     }
 
 
-    if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('smit')){
+    if(((userInput.value).toLowerCase()).includes('6 to 8')){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "100px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `Miss HERA EKRAM takes the class from 6 to 8 in SMIT. Would you want to enroll in the course? `;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
+
+    if(((userInput.value).toLowerCase()).includes('smit')){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "180px";
+            chatMsg.style.maxHeight = "200px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `SMIT is one of the best Technology institute in Pakistan which serves IT training to thousands of students`;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
+
+
+    if(['yes','yup','yeah'].indexOf((userInput.value).toLowerCase()) !== -1){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            // chatMsg.style.height = "100px";
+            chatMsg.style.height = "160px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `Go to the Miss Rabia and take details about course enrollment. She will guide you properly! `;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
+
+    if(((userInput.value).toLowerCase()).includes('who') && ((userInput.value).toLowerCase()).includes('rabia')){
 
         setTimeout(function(){
 
@@ -128,13 +200,63 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `SMIT is one of the best Technology institute in Pakistan which serves IT training to thousands of students`;
+            chatMsg.innerHTML =  `Miss Rabia is a member of the Administration.`;
 
         document.getElementById("my-msg").appendChild(chatMsg);
 
 
         },2000);
     }
+
+    
+    if(['thank','thanks'].indexOf((userInput.value).toLowerCase()) !== -1){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "100px";
+            chatMsg.style.maxHeight = "200px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `Your Welcome!`;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
+      
+    if(['bye', 'ok'].indexOf((userInput.value).toLowerCase()) !== -1){
+
+        setTimeout(function(){
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "100px";
+            chatMsg.style.maxHeight = "200px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML =  `OK Bye! Glad to help you!`;
+
+        document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        },2000);
+    }
+
+    
 
 
     // else{
