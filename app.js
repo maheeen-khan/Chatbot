@@ -21,14 +21,16 @@ function changeMode(event) {
 
 }
 
-function enter(event){
+function enter(event) {
     // var myMsg = document.getElementById('my-msg');
     // var chatMsg = document.getElementById('chatbot-msg');
-    if(event.keyCode === 13 || event.type === 'click'){
+    if (event.keyCode === 13 || event.type === 'click') {
 
         var myMsg = document.createElement('div');
+        myMsg.className = 'animate__animated';
+        myMsg.className += ' animate__fadeInUp';
         myMsg.style.background = 'var(--theme)';
-        myMsg.className = 'ms-auto';
+        myMsg.className += ' ms-auto';
         myMsg.style.width = "50%";
         myMsg.style.height = "100px";
         myMsg.style.maxHeight = "160px";
@@ -43,13 +45,15 @@ function enter(event){
 
     }
 
-    if(['hi','hello','hey'].indexOf((userInput.value).toLowerCase()) !== -1){
+    if (['hi', 'hello', 'hey'].indexOf((userInput.value).toLowerCase()) !== -1) {
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             userInput.value = "";
             // chatMsg.innerHTML = `hello how are you`;
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
@@ -58,21 +62,22 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `hello how are you`;
+            chatMsg.innerHTML = `hello how are you`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
+        }, 2000);
 
-        },2000);
-      
     }
-    
-    if(((userInput.value).toLowerCase()).includes('fine') || ((userInput.value).toLowerCase()).includes('good')){
 
-        setTimeout(function(){
+    if (((userInput.value).toLowerCase()).includes('fine') || ((userInput.value).toLowerCase()).includes('good')) {
+
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.maxHeight = "160px";
@@ -81,21 +86,23 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `Glad to hear that! Is there anything specific you would like to talk about or need help with today?`;
+            chatMsg.innerHTML = `Glad to hear that! Is there anything specific you would like to talk about or need help with today?`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
 
-    if(((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('you')){
+    if (((userInput.value).toLowerCase()).includes('how') && ((userInput.value).toLowerCase()).includes('you')) {
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
@@ -104,44 +111,24 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `I am Fine. What about you ?`;
+            chatMsg.innerHTML = `I am Fine. What about you ?`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
 
-    if(((userInput.value).toLowerCase()).includes('6 to 8')){
 
-        setTimeout(function(){
+    if (((userInput.value).toLowerCase()).includes('smit')) {
 
-            userInput.value = "";
-            var chatMsg = document.createElement('div');
-            chatMsg.style.background = 'var(--chatbot-msg)';
-            chatMsg.style.width = "50%";
-            chatMsg.style.height = "160px";
-            // chatMsg.style.background = "blue";
-            chatMsg.style.color = "white";
-            chatMsg.style.borderRadius = '9px';
-            chatMsg.style.marginBottom = '5px';
-            chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `Miss HERA EKRAM takes the class from 6 to 8 in SMIT. Would you want to enroll in the course? `;
-
-        document.getElementById("my-msg").appendChild(chatMsg);
-
-
-        },2000);
-    }
-
-
-    if(((userInput.value).toLowerCase()).includes('smit')){
-
-        setTimeout(function(){
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "180px";
@@ -151,22 +138,49 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `SMIT is one of the best Technology institute in Pakistan which serves IT training to thousands of students`;
+            chatMsg.innerHTML = `SMIT is one of the best Technology institute in Pakistan which serves IT training to thousands of students`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
+    }
+
+
+    if (((userInput.value).toLowerCase()).includes('6 to 8')) {
+
+        setTimeout(function () {
+
+            userInput.value = "";
+            var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
+            chatMsg.style.background = 'var(--chatbot-msg)';
+            chatMsg.style.width = "50%";
+            chatMsg.style.height = "160px";
+            // chatMsg.style.background = "blue";
+            chatMsg.style.color = "white";
+            chatMsg.style.borderRadius = '9px';
+            chatMsg.style.marginBottom = '5px';
+            chatMsg.style.padding = '7px';
+            chatMsg.innerHTML = `Miss HERA EKRAM takes the class from 6 to 8 in SMIT. Would you want to enroll in the course? `;
+
+            document.getElementById("my-msg").appendChild(chatMsg);
+
+
+        }, 2000);
     }
 
 
 
-    if(['yes','yup','yeah'].indexOf((userInput.value).toLowerCase()) !== -1){
+    if (['yes', 'yup', 'yeah'].indexOf((userInput.value).toLowerCase()) !== -1) {
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             // chatMsg.style.height = "100px";
@@ -176,21 +190,23 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `Go to the Miss Rabia and take details about course enrollment. She will guide you properly! `;
+            chatMsg.innerHTML = `Go to the Miss Rabia and take details about course enrollment. She will guide you properly! `;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
 
-    if(((userInput.value).toLowerCase()).includes('who') && ((userInput.value).toLowerCase()).includes('rabia')){
+    if (((userInput.value).toLowerCase()).includes('who') && ((userInput.value).toLowerCase()).includes('rabia')) {
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
@@ -200,21 +216,23 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `Miss Rabia is a member of the Administration.`;
+            chatMsg.innerHTML = `Miss Rabia is a member of the Administration.`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
-    
-    if(['thank you','thanks'].indexOf((userInput.value).toLowerCase()) !== -1){
 
-        setTimeout(function(){
+    if (['thank you', 'thanks'].indexOf((userInput.value).toLowerCase()) !== -1) {
+
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
@@ -224,21 +242,23 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `Your Welcome!`;
+            chatMsg.innerHTML = `Your Welcome!`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
-      
-    if(['bye', 'ok'].indexOf((userInput.value).toLowerCase()) !== -1){
 
-        setTimeout(function(){
+    if (['bye', 'ok'].indexOf((userInput.value).toLowerCase()) !== -1) {
+
+        setTimeout(function () {
 
             userInput.value = "";
             var chatMsg = document.createElement('div');
+            chatMsg.className = 'animate__animated';
+            chatMsg.className += ' animate__fadeInDown';
             chatMsg.style.background = 'var(--chatbot-msg)';
             chatMsg.style.width = "50%";
             chatMsg.style.height = "100px";
@@ -248,15 +268,15 @@ function enter(event){
             chatMsg.style.borderRadius = '9px';
             chatMsg.style.marginBottom = '5px';
             chatMsg.style.padding = '7px';
-            chatMsg.innerHTML =  `OK Bye! Glad to help you!`;
+            chatMsg.innerHTML = `OK Bye! Glad to help you!`;
 
-        document.getElementById("my-msg").appendChild(chatMsg);
+            document.getElementById("my-msg").appendChild(chatMsg);
 
 
-        },2000);
+        }, 2000);
     }
 
-    
+
 
 
     // else{
